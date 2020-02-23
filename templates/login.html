@@ -1,24 +1,24 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login</title>
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='/main.css') }}">
+</head>
+<body>
 <form action="/login" method="POST">
-<div class="login">
-<div class="login-screen">
-<div class="app-title">
+<div class="login" style="margin:auto;
+top: 50%; left: 50%;">
 <h1>Login</h1>
-</div>
-<div class="login-form">
-<div class="control-group">
 				<input type="text" class="login-field" value="" placeholder="username" name="username">
-<label class="login-field-icon fui-user" for="login-name"></label></div>
-<div class="control-group">
-				<input type="password" class="login-field" value="" placeholder="password" name="password">
-<label class="login-field-icon fui-lock" for="login-pass"></label></div>
+    <input type="password" class="login-field" value="" placeholder="password" name="password">
 <div style="padding-left: 100px;">
                 <input type="radio" name="choice" value="teacher" checked>Teacher<br><br>
                 <input type="radio" name="choice" value="student">Student<br><br>
                 <input type="radio" name="choice" value="admin">Admin
             </div>
 <input type="submit" value="Log in" class="btn btn-primary btn-large btn-block">
-
-</div>
-</div>
 </div>
 </form>
+</body>
+</html>

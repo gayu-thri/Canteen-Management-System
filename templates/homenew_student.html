@@ -1,6 +1,9 @@
+<html>
+<body>
 <header>
 	<h1> Welcome Student</h1>
 </header>
+<link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='/main.css') }}">
 <form action="/homenew_student" method="POST">
 <div style="padding-left: 100px;">
                 <input type="checkbox" name="choice1" value="dosa">Dosa<br><br>
@@ -11,3 +14,5 @@
 <input type="submit" name="submit_button" value="View Cart">      
 <input type="submit" name="submit_button" value="Log out">
 </form>
+</body>
+</html>
