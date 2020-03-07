@@ -5,11 +5,13 @@ import os
 student = {}
 admin = {}
 teachers = {}
+
 '''
 creds = {
     'gayu@gmail.com' : '1122',
     'juju@gmail.com' : '26308'
 '''
+
 student['admin'] = 'password'
 teachers['admin'] = 'password'
 admin['admin'] = 'password'
@@ -33,7 +35,7 @@ def home():
 
 @app.route('/home',methods=["POST"])
 def logreg():
-    if(request.form['submit_button']=='Log in'):
+    if request.form['submit_button']== 'Log in':
         if not session.get('logged_in'):
             return render_template('login.html')
         else:
